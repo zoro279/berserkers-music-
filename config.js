@@ -1,10 +1,8 @@
-
-
 module.exports = {
   TOKEN: "",
-  language: "en",
+  language: "cn",
   ownerID: ["1004206704994566164", ""], 
-  mongodbUri : "",
+  mongodbUri : "mongodb+srv://andy:Zgy20041019@cluster0.e4tq97t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
   spotifyClientId : "",
   spotifyClientSecret : "",
   setupFilePath: './commands/setup.json',
@@ -16,12 +14,19 @@ module.exports = {
   embedTimeout: 5, 
   errorLog: "", 
   nodes: [
-     {
+    {
       name: "GlaceYT",
       password: "glaceyt",
       host: "193.226.78.187",
-      port:  9372,
+      port: 9372,
       secure: false
     }
-  ]
-}
+  ],
+  lavalink: {
+    identifier: "GlaceYT",
+    password: "glaceyt",
+    host: "193.226.78.187",
+    port: 9372,
+    secure: false
+  }
+};
